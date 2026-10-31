@@ -1,0 +1,28 @@
+.highlight {
+    color: #173f75;
+    background-color: #e6f1ff;
+    border-left: 4px solid #3478c8;
+    padding: 12px;
+}
+
+.teks-besar {
+    font-size: 1.4rem;
+}
+
+.selesai span {
+    text-decoration: line-through;
+    color: #687386;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* [Poin 4] Class CSS untuk menyembunyikan elemen */
+.sembunyi {
+    display: none;
+}
+
+.sembunyi {
+    display: none;
+}

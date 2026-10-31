@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum DOM dan Event - Eksperimen Mandiri</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Elemen utama yang dipanggil di JavaScript -->
+    <h1 id="judul">Belajar JavaScript DOM</h1>
+    <p id="pesan">Saya hari ini sedang belajar JavaScript DOM.</p>
+
+    <!-- [Poin 4] Paragraf yang dapat disembunyikan/ditampilkan beserta tombolnya -->
+    <p id="teksSembunyi">Paragraf ini bisa disembunyikan dan ditampilkan kembali.</p>
+    <button id="tombolSembunyi" type="button">Sembunyikan Paragraf</button>
+
+    <br><br>
+    <button id="tombolAksi" type="button">Klik Saya</button>
+
+    <!-- Elemen untuk fitur ubah gaya -->
+    <p id="teksGaya">Teks ini akan berubah gayanya nanti.</p>
+    <button id="tombolGaya">Ubah Gaya</button>
+
+    <!-- Tombol untuk uji coba classList.add dan classList.remove -->
+    <button id="tombolTambah">Tambah Gaya (Add)</button>
+    <button id="tombolHapus">Hapus Gaya (Remove)</button>
+
+    <section>
+        <label for="namaInput">Nama:</label>
+        <input type="text" id="namaInput" maxlength="40">
+        <p>Jumlah karakter: <span id="jumlahKarakter">0</span></p>
+    </section>
+
+    <!-- Form Pendaftaran -->
+    <form id="formPendaftaran" novalidate>
+        <label for="nama">Nama lengkap</label>
+        <input id="nama" name="nama" type="text">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email">
+
+        <!-- [Poin 3] Dropdown Sesi Workshop -->
+        <label for="sesi">Pilih Sesi Workshop</label>
+        <select id="sesi" name="sesi">
+            <option value="">-- Pilih Sesi --</option>
+            <option value="Front-End Web">Front-End Web</option>
+            <option value="Back-End Web">Back-End Web</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+        </select>
+        <p id="pesanSesi">Sesi terpilih: -</p>
+
+        <label for="usia">Usia</label>
+        <input id="usia" name="usia" type="number" min="17" max="100">
+        <button type="submit">Daftar</button>
+    </form>
+    <p id="pesanForm" aria-live="polite"></p>
+
+    <!-- Section To-do List -->
+    <section>
+        <h2>Daftar Tugas</h2>
+        <label for="inputTugas">Tugas baru</label>
+        <input id="inputTugas" type="text">
+        <button id="tambahTugas" type="button">Tambah</button>
+        <p id="pesanTugas" aria-live="polite"></p>
+        <ul id="daftarTugas"></ul>
+    </section>
+</body>
+</html>
